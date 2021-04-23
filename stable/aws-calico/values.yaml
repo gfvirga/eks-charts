@@ -11,7 +11,7 @@ calico:
 
   typha:
     logseverity: Info #Debug, Info, Warning, Error, Fatal
-    image: quay.io/calico/typha
+    image: docker.io/calico/typha
     resources:
       requests:
         memory: "64Mi"
@@ -26,7 +26,7 @@ calico:
     podLabels: {}
   node:
     logseverity: Info #Debug, Info, Warning, Error, Fatal
-    image: quay.io/calico/node
+    image: docker.io/calico/node
     resources:
       requests:
         memory: "32Mi"
